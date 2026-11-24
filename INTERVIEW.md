@@ -19,12 +19,18 @@ compiled), find the payload by hand. CyberChef, running code, logging/prints are
 So the exercise tests three things, in this order: can you *find* it, can you *decode* it, can you
 *explain* it clearly. The third one is where candidates lose points without noticing.
 
-**Ask the recruiter today** (short message, it is a normal thing to ask):
+**Ask in the first minute of the interview.** There is nobody to ask beforehand, and asking is
+normal - it shows you check the rules before you touch a sample:
 
-1. Is it on my laptop or on a machine you provide? Which OS?
-2. Is it on-site or screen-share?
-3. Is Google / official Python docs allowed, or only no-AI?
-4. May I use my own notes?
+1. Is Google / the official Python docs allowed, or only no-AI?
+2. May I use my own notes?
+3. Am I allowed to run code from the sample, or static only?
+4. Is this machine isolated, or should I treat it as a real workstation?
+
+**Because you do not know the machine, be ready for both.** Assume Linux or macOS with a terminal.
+If it is your own laptop: CyberChef downloaded for offline use, AI extensions off. If it is
+theirs: you may have only Python and a browser, so know the pure-Python ways to unpack
+(`python -m zipfile -e`, `python -m tarfile -e`) and to decode (the REPL snippets in the cheatsheet).
 
 ## The team's vocabulary - use these words out loud
 

@@ -24,7 +24,7 @@ hand. No AI. CyberChef, a Python REPL, running and logging code are allowed.
 | 1:45-2:15 | Drills 14-18. Write the loop for 14 yourself | The loop runs without looking at the answer |
 | 2:15-3:00 | `WALKTHROUGHS.md` with the three articles open | You can answer the 10 self-test questions |
 | 3:00-3:20 | `PLAYBOOK.md` "When you are stuck" + `INTERVIEW.md` | You said the 2-minute report out loud once |
-| 3:20-3:30 | Message the recruiter the 4 questions in `INTERVIEW.md` | Sent |
+| 3:20-3:30 | Prepare for an unknown machine: download CyberChef for offline use, memorise the 4 opening questions in `INTERVIEW.md` | You can unpack a wheel with only `python -m zipfile` |
 
 Then sleep. A rested head finds an off-screen line faster than a tired one.
 
