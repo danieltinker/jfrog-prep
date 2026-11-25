@@ -100,7 +100,7 @@ x = p.encode()
 for _ in range(25):
     x = base64.b64encode(zlib.compress(x))[::-1]
 add("25 identical layers", "Each layer is: reverse -> Base64 -> zlib. There are many layers. Do NOT do this by hand.",
-    x.decode(), p, "(Reverse -> From Base64 -> Zlib Inflate) x 25 - painful in CyberChef; use Python",
+    x.decode(), p, "Label (`top`) -> Reverse -> From Base64 -> Zlib Inflate -> Jump (label `top`, maximum jumps 24)",
     "x = s.encode()\nwhile not x.startswith(b'FLAG'):\n    x = zlib.decompress(base64.b64decode(x[::-1]))")
 
 p = "FLAG{rc4_needs_the_key_so_find_where_the_code_builds_it}"
