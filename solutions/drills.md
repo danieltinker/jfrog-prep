@@ -133,7 +133,7 @@ codecs.decode(zlib.decompress(base64.b64decode(bytes.fromhex(s)[::-1])).decode()
 ## Drill 14 - 25 identical layers
 
 - **Plaintext:** `FLAG{twenty_five_layers_means_write_a_loop}`
-- **CyberChef:** (Reverse -> From Base64 -> Zlib Inflate) x 25 - painful in CyberChef; use Python
+- **CyberChef:** Label (`top`) -> Reverse -> From Base64 -> Zlib Inflate -> Jump (label `top`, maximum jumps 24)
 - **Python:**
 
 ```python

@@ -139,7 +139,12 @@ From Base64 · From Hex · From Decimal · From Base32 · From Base85 · Reverse
 XOR Brute Force · Zlib Inflate · Gunzip · Raw Inflate · Decode text · Fernet Decrypt · RC4 ·
 AES Decrypt · Unescape string · Magic · To Hex · Extract URLs · Defang URL · Regular expression
 
-- **Magic** guesses layers for you. Give it a crib (`http`, `import`) and tick "Intensive mode".
+- **Magic** is a first hint, not the method. Tested: it solves Base64 -> zlib, but it stops at
+  reversed data (it found From Hex on Drill 13 and nothing after).
+- **XOR** with a text key: change the key dropdown from **HEX** to **UTF8**, or the key is misread.
+- Many identical layers, no Python: **Label** (name `top`) -> the layer's operations -> **Jump**
+  (label `top`, maximum jumps = layers - 1). Too few jumps: output still looks encoded. Too many:
+  an error such as "Zlib Inflate - unsupported compression method". Raise the number until readable.
 - **Extract URLs** then **Defang URL** gives you the IOC list for the report in two clicks.
 - **To Hex** on the output shows the magic bytes of the next layer.
 - The pause/breakpoint icon on an operation lets you look at one layer at a time.
